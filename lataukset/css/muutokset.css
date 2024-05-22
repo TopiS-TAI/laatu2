@@ -1,0 +1,69 @@
+.hallintavalinta {
+    margin-right: 20px;
+    padding: 0 0 0 30px !important;
+    line-height: 30px;
+    color: black;
+  
+}
+.hallintavalinta::after {
+    margin-top: 2px;
+}
+
+.draftit {
+    display: none;
+}
+
+span {
+    color: black;
+}
+
+.draftimaara {
+    font-size: 10px; 
+    margin-left: 1px;
+}
+
+.secondary-content {
+    margin-top: -22px; 
+    width: 60px;
+    margin-right: -22px;
+}
+.roolit {
+    padding: 2px;
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    font-size: 11px; 
+    line-height: 10px;
+    color: #000;            
+}
+h6 {
+    font-size: 15px;
+}
+.rooliikoni {
+    height: 16px;
+    width: auto;
+}
+.collection-item {
+    color: red; 
+    position: relative;
+}
+
+.modal { width: 95% !important ; height: 95% !important ; }  /* increase the height and width as you desire */
+
+#spinneri{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    margin-top: -20px;
+    margin-left: -120px;
+    width: 400px;
+    height: 120px;
+	background-color: #CFD8DC;
+	padding: 30px; 
+	border: 2px solid #71B4AE;
+}
+
+#modal10 {
+    max-width: 675px;
+}
+

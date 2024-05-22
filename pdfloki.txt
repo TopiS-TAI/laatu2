@@ -1,0 +1,41 @@
+<style>
+            body {
+                color: red;
+                font-size: 8px;
+            }
+            h1 {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 10px;
+            }
+            p {
+                color: red;
+            }            
+            </style><body>Yksittäiset hakijat omaehtoiseen koulutukseen tai suoraan näyttöön<p><span style="text-decoration: underline;"><span style="color: #95a5a6; font-size: 14pt; text-decoration: underline;"><strong>88. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_yksittaiset_tiedustelijat_ja_suoraan_nayttoon_0.pdf">Toimintaohje opiskelijavalintaan: yksittäiset hakijat omaehtoiseen koulutukseen tai suoraan näyttöön</a></strong></span></span></p>
+<p><span style="color: #000000; font-size: 12pt;">Valintaperusteet täyttävien hakijoiden valitseminen soveltuvimpaan tutkintoon tai sen osaan tai hakijan ohjaaminen suoraan näyttöön. Valitsematta jääneiden jatko-ohjaus. </span></p>Valinta ja päätös<p>Vastuuopettaja, tiimivastaava tai opinto-ohjaaja lähettävät opintosihteerille valinnan päätösasiakirjat (päätösehdotus, jossa nimi), valintakirjeiden sisällön sekä tiedot hakijan aloituksesta. Hakija sijoitetaan sopivan ryhmän opiskelijaksi tai suoraan näyttöön. Vastuuopettaja tiedottaa päätöksestä opetukseen liittyviä muita opettajia.</p>
+<p> </p>
+<p><span style="text-decoration: underline;"><span style="color: #95a5a6; font-size: 12pt; text-decoration: underline;"><strong>88. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_yksittaiset_tiedustelijat_ja_suoraan_nayttoon_0.pdf">Toimintaohje opiskelijavalintaan: yksittäiset hakijat omaehtoiseen koulutukseen tai suoraan näyttöön</a></strong></span></span></p>
+<p>- Lähettävät os:lle valinnan päätösasiakirjat (päätösehdotus, jossa nimi ja merkintäoppivelvollisuudesta), valintakirjeiden sisällön, tiedot hakijan aloituksesta tms.<br />- sijoittavat hakijan sopivan ryhmän opiskelijaksi tai suoraan näyttöön.<br />- tiedottavat vastuuopettajaa, joka tiedottaa muita opettajia.</p>Jos hakija hakee työttömyysetuutta omaehtoiseen koulutukseen<p>Vastuuopettaja tai tiimivastaava perehdyttää työttömyysetuudella opiskelevan opiskelijan (min 25v) TE-palveluiden ohjeiden mukaan. Valittu opiskelija ei saa aloittaa opintoja ennen hakemuksen saapumista TE-toimistoon.</p>
+<p> </p>
+<p><span style="text-decoration: underline;"><span style="color: #95a5a6; font-size: 12pt; text-decoration: underline;"><strong>88. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_yksittaiset_tiedustelijat_ja_suoraan_nayttoon_0.pdf">Toimintaohje opiskelijavalintaan: yksittäiset hakijat omaehtoiseen koulutukseen tai suoraan näyttöön</a></strong></span></span></p>
+<p>Perehdyttää työttämyysetuudella opiskelevan opiskelijan TE-palveluiden ohjeiden mukaan</p>Harkintaan perustuvan yhteishaun opiskelijavalinta<p><span style="text-decoration: underline; font-size: 12pt; color: #95a5a6;"><strong>90. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_harkintaan_perustuva_valinta_yhteishaussa_hyvaksytty_5.4.2022_0.pdf">Toimintaohje opiskelijavalintaan: harkintaan perustuva valinta yhteishaussa</a></strong></span></p>
+<p> </p>Tavoite<p><span style="text-decoration: underline; font-size: 12pt; color: #95a5a6;"><strong>90. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_harkintaan_perustuva_valinta_yhteishaussa_hyvaksytty_5.4.2022_0.pdf">Toimintaohje opiskelijavalintaan: harkintaan perustuva valinta yhteishaussa</a></strong></span></p>
+<p>Lisätä yhteishaussa hakevien mahdollisuuksia tulla valituksi koulutukseen.</p>
+<p> </p>
+<p> </p>Päätös ja arkistoiminen<p><span style="text-decoration: underline; font-size: 12pt; color: #95a5a6;"><strong>90. <a style="color: #95a5a6; text-decoration: underline;" href="https://www.turkuai.fi/sites/default/files/atoms/files/toimintaohje_opiskelijavalintaan_harkintaan_perustuva_valinta_yhteishaussa_hyvaksytty_5.4.2022_0.pdf">Toimintaohje opiskelijavalintaan: harkintaan perustuva valinta yhteishaussa</a></strong></span></p>
+<p>Mahdollisesti täyttää ja toimittaa opinto-ohjaajalle (elokuusta/22 lähtien)Tiedonsiirtoon perustuva <br />suostumuslomakkeen. </p><style>
+            body {
+                color: red;
+                font-size: 8px;
+            }
+            h1 {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 10px;
+            }
+            p {
+                color: red;
+            }            
+            </style><body>Jatkuva haku<h3>Mitä vaan...</h3>Jatkuva haku<p>Jatkuva hakukin vielä</p>
