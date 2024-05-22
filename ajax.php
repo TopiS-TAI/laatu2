@@ -436,6 +436,25 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
 
 }
 
+if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "vertaile")
+{
+	// SELECT * FROM sis WHERE kategoria = 2 AND rooli in (2, 12);
+	$kategoria = $_POST['kategoria'];
+	$roolit = $_POST['roolit'];
+	
+	$roolit_lista = explode(',', $roolit);
+	$pituus = count($roolit_lista);
+	$inclause=implode(',',array_fill(0,$pituus,'?'));
+	$sql_pohja = "SELECT * FROM sis WHERE kategoria = ? AND rooli in (%s)";
+	$sql_kysely = sprintf($sql_pohja, $inclause);
+	
+	$tark = $yhteys_pdo->prepare($sql_kysely);
+	$tark->execute(array($kategoria, ...$roolit_lista));
+	$ta = $tark->fetchAll(PDO::FETCH_ASSOC);
+	echo json_encode($ta);
+	exit;
+}
+
 if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "muokkaa")
 {
     $kategoria = $_POST['kategoria'];

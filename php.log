@@ -646,3 +646,41 @@
 [22-May-2024 09:26:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\laatu2\ajax.php on line 414
 [22-May-2024 09:26:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\laatu2\ajax.php on line 414
 [22-May-2024 09:26:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\laatu2\ajax.php on line 414
+[22-May-2024 09:32:58 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:07:36 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:07:37 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:08:54 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:08:54 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:12:13 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:12:13 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:12:14 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:13:03 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:13:03 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:13:04 Europe/Berlin] PHP Warning:  Undefined variable $jono in C:\xampp\htdocs\laatu2\ajax.php on line 379
+[22-May-2024 10:35:40 Europe/Berlin] PHP Warning:  Undefined variable $kategoria in C:\xampp\htdocs\laatu2\ajax.php on line 443
+[22-May-2024 10:36:50 Europe/Berlin] PHP Warning:  Undefined variable $kategoria in C:\xampp\htdocs\laatu2\ajax.php on line 443
+[22-May-2024 10:37:03 Europe/Berlin] PHP Warning:  Undefined variable $kategoria in C:\xampp\htdocs\laatu2\ajax.php on line 444
+[22-May-2024 10:38:39 Europe/Berlin] PHP Warning:  Undefined variable $POST in C:\xampp\htdocs\laatu2\ajax.php on line 442
+[22-May-2024 10:38:39 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\laatu2\ajax.php on line 442
+[22-May-2024 10:40:51 Europe/Berlin] PHP Warning:  Undefined variable $POST in C:\xampp\htdocs\laatu2\ajax.php on line 442
+[22-May-2024 10:40:51 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\laatu2\ajax.php on line 442
+[22-May-2024 10:43:05 Europe/Berlin] roolitstring
+[22-May-2024 10:43:34 Europe/Berlin] roolit4,12
+[22-May-2024 10:44:35 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\laatu2\ajax.php on line 444
+[22-May-2024 10:44:35 Europe/Berlin] roolit2Array
+[22-May-2024 10:46:32 Europe/Berlin] roolit24
+[22-May-2024 10:46:46 Europe/Berlin] roolit24,9
+[22-May-2024 10:51:12 Europe/Berlin] roolit sulkeissa(2,11)
+[22-May-2024 10:57:12 Europe/Berlin] PHP Warning:  Undefined variable $roolit_sulkeissa in C:\xampp\htdocs\laatu2\ajax.php on line 448
+[22-May-2024 10:57:12 Europe/Berlin] roolit sulkeissa
+[22-May-2024 10:57:12 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\laatu2\ajax.php on line 451
+[22-May-2024 10:57:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters in C:\xampp\htdocs\laatu2\ajax.php:451
+Stack trace:
+#0 C:\xampp\htdocs\laatu2\ajax.php(451): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\laatu2\ajax.php on line 451
+[22-May-2024 11:01:47 Europe/Berlin] PHP Warning:  Undefined variable $roolit_sulkeissa in C:\xampp\htdocs\laatu2\ajax.php on line 448
+[22-May-2024 11:01:47 Europe/Berlin] roolit sulkeissa
+[22-May-2024 11:02:48 Europe/Berlin] sqlSELECT * FROM sis WHERE kategoria = ? AND rooli in (?,?,?)
+[22-May-2024 11:07:23 Europe/Berlin] sqlSELECT * FROM sis WHERE kategoria = ? AND rooli in (?,?)
+[22-May-2024 11:07:56 Europe/Berlin] sqlSELECT * FROM sis WHERE kategoria = ? AND rooli in (?)

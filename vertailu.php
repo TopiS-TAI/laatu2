@@ -132,10 +132,10 @@ $linkkijono.="],";
             <div class="col s12">
                 <a href="hallinta.php" class="brand-logo"><img style="margin-top: 3px;" src="img/tai_logo_valkoinen_nettiin.png" /></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="active"><a href="hallinta.php">Sisältö</a></li>
+                    <li><a href="hallinta.php">Sisältö</a></li>
                     <li><a href="tiedostot.php">Tiedostot</a></li>
                     <li><a href="kuvat.php">Kuvat</a></li>
-                    <li><a href="vertailu.php">Vertailu</a></li>
+                    <li class="active"><a href="vertailu.php">Vertailu</a></li>
                     <li style="width: 60px">&nbsp;</li>
                     <li><a href="index.php?act=out">Kirjaudu ulos</a></li>
                 </ul>
@@ -211,7 +211,7 @@ $linkkijono.="],";
                     for ($e=0;$e<7;$e++)
                     { ?>
                         <label>
-                            <input type="radio" name="rooli" class="with-gap" id="rooli<?php echo $rooli_nro[$e];?>" value="<?php echo $rooli_nro[$e];?>" />
+                            <input type="checkbox" name="rooli" class="with-gap" id="rooli<?php echo $rooli_nro[$e];?>" />
                             <span class="hallintavalinta"><?php echo $rooli_rooli[$e];?></span>
                         </label><br />
                     <?php
@@ -226,12 +226,13 @@ $linkkijono.="],";
                         for ($e=7;$e<$p;$e++)
                         { ?>
                             <label>
-                                <input type="radio" name="rooli" class="with-gap" id="rooli<?php echo $rooli_nro[$e];?>" value="<?php echo $rooli_nro[$e];?>" />
+                                <input type="checkbox" name="rooli" class="with-gap" id="rooli<?php echo $rooli_nro[$e];?>" />
                                 <span class="hallintavalinta"><?php echo $rooli_rooli[$e];?></span>
                             </label><br />
                         <?php
                         } ?>    
                     </p>
+                    <p><button id="vertaa">Hae</button></p>
                 </div>
                 <div class="col s12"><br />                   
                     <div class="row">
@@ -460,7 +461,7 @@ $linkkijono.="],";
 
      
 			// vaihdetaan roolia radiobuttoneilla, tuodaan näkyviin muokkauspainikkeet sisällysluetteloon
-			$('body').on('click', '[id^=rooli]', function(e){ 
+			$('body').on('click', '[id^=roolix]', function(e){ 
 			
 				var id  = $(this).attr('id');  
 				var nro = id.match(/\d+/);
@@ -540,6 +541,37 @@ $linkkijono.="],";
                 });
 
             });
+
+            $('body').on('click', '#vertaa', function(e) {
+                e.preventDefault()
+                const checkboxes = $('[id^=rooli]')
+                var kategoria = sessionStorage.kategoria
+                const roolit = []
+                for (box of checkboxes) {
+                    if (box.checked) {
+                        roolinro = parseInt(box.id.slice(5))
+                        roolit.push(roolinro)
+                    }
+                }
+                console.log('click', roolit)
+
+                var tiedot = 'roolit=' + roolit + '&kategoria=' + kategoria + '&toiminto=vertaile';
+
+                $.ajax({  
+
+                    type: "POST", 
+                    url: "ajax.php",
+                    data: tiedot,
+                    dataType: 'json',
+                    cache: false,
+                    success: function(data){
+                        console.log('data', data)
+                    }
+
+                // SELECT * FROM sis WHERE kategoria = 2 AND rooli in (2, 12);
+            })
+            })
+
 			
 			$('body').on('click', '[id^=kate]', function(e){ 
                 // vaihdetaan lomakkeella kategoriaa. Haetaan ko. kategorian sisällysluettelo näkyviin
