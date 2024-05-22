@@ -1,6 +1,6 @@
 <?php
 
-if ($_GET['act'] == "out")
+if (isset($_GET['act']) AND $_GET['act'] == "out")
 { ?>
 <script>
   localStorage.removeItem('taitunniste');

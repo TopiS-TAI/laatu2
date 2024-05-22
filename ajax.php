@@ -332,7 +332,7 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
         {
             $jono = "<ul class=\"collection\">";
         }
-		if ($ha['taso3'] > 0) // 3. tason alaotsikko
+		if (isset($ha['taso3']) AND $ha['taso3'] > 0) // 3. tason alaotsikko
         {
             $jono.="<li class=\"collection-item\" id=\"otsikkoteksti".$ha['id']."\" style=\"color: ".$tekstivari."\"><h6 style=\"margin-left: 70px; margin-right: 30px; text-indent:-3.0em;\">".$ha['paa'].".".$ha['taso1'].".".$ha['taso2'].".".$ha['taso3']."  ".$ha['otsikko']."
 			</h6>
@@ -342,7 +342,7 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
 			<div class=\"draftit\" id=\"draftit".$ha['id']."\" style=\"width:100%;\"></div> 
             </li>";
         }
-        else if ($ha['taso2'] > 0 AND $ha['taso3'] == '') // 2. tason alaotsikko
+        else if ($ha['taso2'] > 0 AND isset($ha['taso3']) AND $ha['taso3'] == '') // 2. tason alaotsikko
         {
             $jono.="<li class=\"collection-item\" id=\"otsikkoteksti".$ha['id']."\" style=\"color: ".$tekstivari."\"><h6 style=\"margin-left: 50px; margin-right: 30px; text-indent:-2.3em;\">".$ha['paa'].".".$ha['taso1'].".".$ha['taso2']."  ".$ha['otsikko']."
 			</h6>
@@ -382,7 +382,7 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
 	$mahaku->execute(array(':kategoria'=>$kategoria, ':otsikkoid'=>$otsikkoid, ':rooli'=>$rooli, ':mrooli'=>$rooli));
 	$ma = $mahaku->fetch(PDO::FETCH_ASSOC);
 
-	if ($ma['id'] <> '')
+	if (isset($ma['id']) AND $ma['id'] <> '')
 	{
 		$yh['maara'] = "Tämä rooli kopioituu roolista <i><b>".$ma['rooli']."</b></i>";
 		$master = 0;
@@ -396,7 +396,7 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
 		$tu = $haku3->fetch(PDO::FETCH_ASSOC);
 
 		$yhthaku = $yhteys_pdo->prepare("SELECT count(id) as maara FROM $tietokanta.master WHERE kategoria = :kategoria AND otsikkoid = :otsikkoid AND master_rooli = :mrooli AND kaytossa = '1'");
-		$yhthaku->execute(array(':kategoria'=>$kategoria, ':otsikkoid'=>$otsikkoid, ':mrooli'=>$tu['master_rooli']));
+		$yhthaku->execute(array(':kategoria'=>$kategoria, ':otsikkoid'=>$otsikkoid, ':mrooli'=>isset($tu['master_rooli']) ? $tu['master_rooli'] : ''));
 		$yh = $yhthaku->fetch(PDO::FETCH_ASSOC);
 
 		if ($yh['maara'] == 1)
