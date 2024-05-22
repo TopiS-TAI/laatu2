@@ -411,7 +411,7 @@ if (isset($_POST['toiminto']) AND $_POST['toiminto'] == "haenapit")
 		$haku->execute(array(':otsikko'=>$otsikkoid, ':kategoria'=>$kategoria, ':rooli'=>$rooli));
 		$ha = $haku->fetch(PDO::FETCH_ASSOC);
 
-		if ($ha['id'] <> '')
+		if (isset($ha['id']) AND $ha['id'] <> '')
 		{
 			$sisalto = $ha['sisalto'];
 		}
